@@ -69,4 +69,27 @@ public class Downloader {
         return bytes;
     }
 
+    @RequestMapping("/wl")
+    @ResponseBody
+    public byte[] writeLocal(
+            @RequestParam(required = false) String filePath
+    ) throws IOException {
+        if (filePath == null) {
+            filePath = "/data/pconline1634897416186.apk";
+        } else {
+            filePath = "/data/" + filePath;
+        }
+
+        // 文件名称
+        String fn = StringUtil.getFileName(filePath);
+
+        byte[] bytes = ByteToFileUtil.getBytes(filePath, 2);
+
+        // 生成文件
+        System.out.println("生成文件start");
+        ByteToFileUtil.buildFile(bytes, "/data2", fn);
+        System.out.println("生成文件end");
+        return bytes;
+    }
+
 }
