@@ -1,0 +1,2 @@
+
+39---0 2 * * * /bin/bash /data/script/ftpfile_put.sh  > /dev/null 2>&1

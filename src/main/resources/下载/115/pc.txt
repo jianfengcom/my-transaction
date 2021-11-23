@@ -1,0 +1,16 @@
+-- 位置a
+/data1/devupload/web/pcdownload/${line}
+
+-- 位置b
+${backup_dir}/pconline${line}
+/data/sh/pc/backup_pc/pconline${line}
+
+1. 从位置a拷贝到位置b
+
+
+-- date "+%F_%H-%M"
+2021-11-22_14-56
+年月日时分
+
+
+

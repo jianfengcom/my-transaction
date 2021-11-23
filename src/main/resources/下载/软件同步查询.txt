@@ -1,0 +1,10 @@
+
+-- pc
+http://newplay.pconline.com.cn/admin/clientMasterPcLogs.do
+
+-- apk
+http://newplay.pconline.com.cn/admin/clientMasterAppLogs.do
+
+SELECT * FROM dl_client_master_app_log WHERE apk_file_name = '202111/1637335104942.apk'
+setFlag(1);
+setFtpDate(new Date());

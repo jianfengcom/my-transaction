@@ -1,0 +1,27 @@
+https://devupload.pconline.com.cn/uploadForPc.do
+cn.pconline.pcdlc.upload.servlet.UploadForPc
+
+
+/data/web/pconline-devupload/WEB-INF/applicationContext.xml
+
+
+<list>
+                        <value>classpath:permission_zh.properties</value>
+                        <value>classpath:system.properties</value>
+                        <value>classpath:memcache.properties</value>
+                        <value>file:/data/pc-config/passport.properties</value>
+</list>
+
+
+<input id="file64" name="filename2" value="1637553648842.exe" type="hidden">
+<input id="_file64" name="_filename2" value="ldyun_1.9.1.exe" type="hidden">
+
+
+/data/web/pconline-devupload/WEB-INF/classes/system.properties
+
+
+cd /data1/devupload/web/pcdownload
+
+ll 1637553648842.exe
+已被上传到116
+

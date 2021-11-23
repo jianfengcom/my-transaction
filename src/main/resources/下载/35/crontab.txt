@@ -1,0 +1,8 @@
+16---#ftp-new-idc
+17---*/15 * * * * /bin/bash /data1/sh/pc/wget_pc_file_and_sync_to_ftp-new-pc.sh &> /dev/null
+18---
+19---#ftp-new-apk
+20---*/5 * * * * /bin/bash /data1/sh/apk/wget_apk_file_and_sync_to_ftp-new-apk.sh &> /dev/null
+21---
+22---#ftp-new-game,dy
+23---*/15 * * * * /bin/bash /data1/sh/game_dy/wget_pc_dy_file_and_sync_to_ftp-new-pc.sh  &> /dev/null

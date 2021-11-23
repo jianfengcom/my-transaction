@@ -1,0 +1,9 @@
+
+31---#ftp-apk上传并删除
+32---*/10 * * * * /data/sh/devupload/wget_apk_file_and_sync_to_ftp-apk.sh  &> /dev/null
+33---
+34---#ftp-vr
+35---*/10 * * * * /data/sh/vr/wget_vr_file_and_sync_to_ftp-vr.sh &> /dev/null
+36---
+37---#ftp-idc
+38---*/10 * * * * /data/sh/pc/wget_pc_file_and_sync_to_ftp-idc.sh &> /dev/null

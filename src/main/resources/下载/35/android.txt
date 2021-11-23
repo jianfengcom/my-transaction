@@ -1,0 +1,25 @@
+-- 位置a
+${pc_dir}/${Date_file}
+/data1/devupload/web/apkdoanload/
+
+-- 位置a
+${backup_dir}/${Date_dir}/pconline${Date_file}
+/data1/sh/apk/backup_pc/${Date_dir}/pconline${Date_file}
+
+0. 查询
+http://172.21.0.99:8080/intf/developer/getNewApkLog.jsp?minute=60&type=1&size=300
+SELECT * FROM dl_client_master_app_log where create_date >= '2021-11-22 00:00:00' and flag = 0 and dl_developer_id = 0 order by create_date desc limit 300
+dl_developer_id = 0: 爬虫
+
+1. 从位置a拷贝到位置b, 位置b的文件已同步到ftp
+
+2. 位置b的文件是否已同步
+SELECT * FROM dl_client_master_app_log WHERE apk_file_name LIKE '%1637549665882.apk'
+
+3.1637549378689.apk 1637550612065.apk 位置a有; 位置b, 表dl_client_master_app_log 没有
+猜测: 上传成功, 但是没有保存软件
+SELECT * FROM dl_client_master_app_log WHERE apk_file_name LIKE '%1637549378689.apk'
+SELECT * FROM dl_client_master_app_log WHERE apk_file_name LIKE '%1637550612065.apk'
+
+
+
